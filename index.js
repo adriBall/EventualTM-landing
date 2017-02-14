@@ -6,13 +6,13 @@ const exphbs = require('express-handlebars')
 const app = express()
 app.set('port', (process.env.PORT || 5000));
 
-app.engine('.hbs', exphbs({  
+app.engine('.html', exphbs({  
   defaultLayout: 'main',
-  extname: '.hbs',
+  extname: '.html',
   layoutsDir: path.join(__dirname, 'views/layouts')
 }))
 
-app.set('view engine', '.hbs')  
+app.set('view engine', '.html');
 app.set('views', path.join(__dirname, 'views'))  
 app.use(express.static(__dirname + '/public'));
 
