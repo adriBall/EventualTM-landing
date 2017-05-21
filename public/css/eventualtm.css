@@ -9,8 +9,6 @@ p,li {
 
 .memberImage {
     overflow: hidden;
-    width: 233px;
-    height: 372px
 }
 
 .cardMargins {
@@ -32,4 +30,38 @@ p,li {
 
 .headroom--pinned {
     top: 0 !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.nobottommargin {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.name {
+    padding: 0 !important;
+    margin-left: 15px !important;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.description {
+    padding: 0 !important;
+    margin-left: 15px !important;
+    margin-right: 15px;
+}
+
+.cent {
+    align-items: center;
+    align-content: center;
+}
+
+.imagediv {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
