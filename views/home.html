@@ -1,178 +1,25 @@
-
-<br><br><br><br><br>
-<div id="tab1" class="section white">
-	<div class="container">
-		<p class="grey-text text-darken-3 lighten-3">EventualTeam consiste en un grupo de estudiantes del grado en Ingeniería Informática de la Universitat Jaume I formado para desarrollar la aplicación web de gestión de eventos <b>Eventual</b>, donde los usuarios de la misma pueden crear y gestionar diferentes tipos de actividades, así como invitar a otros usuarios a participar en estas.
-        </p>
-	    <p class="grey-text text-darken-3 lighten-3">La realización de este proyecto va a estar caracterizada por el uso de metodologías ágiles, las cuales van a favorecer buenos resultados aprovechando al máximo los recursos y tiempo disponibles, junto con el uso de tecnologías <i>state of the art</i>.</p>
-	    <img class="responsive-img" src="res/img2.jpg">
-	</div>
+<div class="tabsContentDiv">
+    <div id="tab1"></div>
+    <div id="tab2"></div>
+    <div id="tab3"></div>
+    <div id="tab4"></div>
 </div>
 
-<div id="tab2" class="section white">
-	<div class="container">
-        <div class="col s12 m7 cardMargins">
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img class="memberImage" src="res/adri.jpg">
-                </div>
-                <div class="card-stacked">
-                    <h5 style="margin-left: 25px" class="header">Adrián Enríquez Ballester</h5>
-                    <div class="card-content">
-                        <p>Estudiante de los grados en Ingeniería Informática y Matemática Computacional en la Universitat Jaume I de Castellón. Con conocimientos avanzados de Java, Python, desarrollo de aplicaciones Android y menos pero no menos interesantes de lenguajes de programación funcional pura como Haskell.</p><br>
-                        <p>A pesar de no haber continuado por ahora en la música de manera académica mantengo en lo posible esta dedicación, siendo el actual guitarrista del grupo valenciano <a target="_blank" href="https://www.youtube.com/watch?v=6DtfOQcqQ6w">Reversed and Reflected</a>, caracterizado por la curiosa mezcla de música electrónica junto a una vertiente de metal en la que predomina la complejidad rítmica.</p><br>
-                        <p>Anteriormente miembro del grupo de metal progresivo <a target="_blank" href="https://www.youtube.com/watch?v=4wnDCqfbTsg">Axiomes</a> y Oboe en la <a target="_blank" href="https://www.youtube.com/watch?v=EcAzpq9pJlU">Banda de música Ciutat de Benicarló</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--Load tabs content-->
+<script type="text/javascript">
 
-        <div class="cardMargins">
-            <div class="card horizontal col s12 m12" data-aos="fade-up">
-				<div class="row">
-						<div class="card-image col s12 m8">
-							<img class="memberImage" src="res/adri.jpg">
-						</div>
-						<div class="card-stacked col s12 m4" >
-							<h5 style="margin-left: 25px" class="header">Efrén Grau Biosca</h5>
-							<div class="card-content">
-								<p>Descripción</a>.</p>
-							</div>
-							<div class="card-action">
-								<a href="#">This is a link</a>
-							</div>
-						</div>
-				</div>
-            </div>
-        </div>
+    for (var i = 1; i < 5; i++) {
+        var oReq = new XMLHttpRequest();
+        oReq.open("GET", "/tab" + i, true);
+        oReq.onload = loadTab(i, oReq);
+        oReq.send();
+    }
 
-        <div class="col s12 m7 cardMargins">
-            <div class="card horizontal" data-aos="fade-up">
-                <div class="card-image">
-                    <img class="memberImage" src="res/adri.jpg">
-                </div>
-                <div class="card-stacked">
-                    <h5 style="margin-left: 25px" class="header">Fernando Gómez Aparicio</h5>
-                    <div class="card-content">
-                        <p>Descripción</a>.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    function loadTab(i, oReq) {
+        return function (e) {
+            var myText = oReq.responseText;
+            document.getElementById("tab" + i).innerHTML = myText;
+        }
+    }
 
-        <div class="col s12 m7 cardMargins">
-            <div class="card horizontal" data-aos="fade-up">
-                <div class="card-image">
-                    <img class="memberImage" src="res/adri.jpg">
-                </div>
-                <div class="card-stacked">
-                    <h5 style="margin-left: 25px" class="header">Marina Castellote García</h5>
-                    <div class="card-content">
-                        <p>Descripción</a>.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s12 m7 cardMargins">
-            <div class="card horizontal">
-                <div class="card-image">
-                    <img class="memberImage"  src="res/adri.jpg">
-                </div>
-                <div class="card-stacked">
-                    <h5 style="margin-left: 25px" class="header">Miguel Ángel Moreno Amaya</h5>
-                    <div class="card-content">
-                        <p>Descripción</a>.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-	</div>
-</div>
-
-<div id="tab3" class="section white">
-	<div class="container">
-  		<div align="center"><img src="res/jira.svg" width="40%" height="40%"  style="padding-bottom: 5%;padding-top: 5%;" class="responsive-img"></div>
-		<p class="grey-text text-darken-3 lighten-3">
-			Utilizamos la metodología ágil SCRUM con sprints de 4 semanas dónde se especifican las tareas a desarrollar en cada bloque. La gestión de los sprints será controlada por la plataforma de la empresa JIRA.
-		</p>
-		<p>Cada tarea a desarrollar pasará por 4 fases distintas:</p>	
-		<li>
-			Por hacer. Son las tareas asignadas al sprint en espera de ser implementadas.
-		</li>
-		<li>
-			En progreso. Son aquellas tareas actualmente en  desarrollo, con un máximo de dos tareas simultáneas por persona.
-		</li>
-		<li>
-			En pruebas. A espera de que el director de proyecto de conformidad. De lo contrario la tarea volverá a estar en progreso.
-		</li>
-		<li>
-			Hecho. Una vez el director de proyecto da conformidad, la tarea queda finalizada.
-		</li>
-		<p class="grey-text text-darken-3 lighten-3">
-			Además, siguiendo dicha metodología realizamos cada día la Scrum Daily Meeting, cuyo objetivo es facilitar la transferencia de información y la colaboración entre los miembros del equipo para aumentar su productividad, al poner de manifiesto puntos en que se pueden ayudar unos a otros.
-		</p>
-		<p class="grey-text text-darken-3 lighten-3">
-			Cada miembro del equipo inspecciona el trabajo que el resto está realizando (i.e. dependencias entre tareas, progreso hacia el objetivo de la iteración, obstáculos que pueden impedir este objetivo, etc), para al finalizar la reunión, poder hacer las adaptaciones necesarias que permitan cumplir con el compromiso conjunto acordado para la iteración.
-		</p>
-		<img style="padding-bottom: 5%;padding-top: 5%;" class="responsive-img" src="res/img3.png">
-	</div>
-</div>
-
-<div id="tab4" class="section white">
-    <div class="container">
-
-    </div>
-</div>
-
-<div id="tab5" class="section white">
-    <div class="container">
-
-    </div>
-</div>
-
-<div class="container">
-	<div class="section">
-
-	  <!--   Icon Section   -->
-	  <div class="row">
-	    <div class="col s12 m4">
-	      <div class="icon-block">
-	        <h2 class="center blue-grey-text"><i class="material-icons">flash_on</i></h2>
-	        <h5 class="center">Speeds up development</h5>
-
-	        <p class="light">Escribir algo resumido sobre las ventajas de la metodología.</p>
-	      </div>
-	    </div>
-
-	    <div class="col s12 m4">
-	      <div class="icon-block">
-	        <h2 class="center blue-grey-text"><i class="material-icons">group</i></h2>
-	        <h5 class="center">Team Experience</h5>
-
-	        <p class="light">Escribir algo resumido sobre las ventajas del equipo.</p>
-	      </div>
-	    </div>
-
-	    <div class="col s12 m4">
-	      <div class="icon-block">
-	        <h2 class="center blue-grey-text"><i class="material-icons">settings</i></h2>
-	        <h5 class="center">Easy to work with</h5>
-
-	        <p class="light">Escribir algo resumido sobre las ventajas de las tecnologías.</p>
-	      </div>
-	    </div>
-	  </div>
-
-	</div>
-	<br><br>
-</div>
+</script>

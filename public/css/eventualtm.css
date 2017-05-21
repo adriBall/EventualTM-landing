@@ -3,6 +3,10 @@ p,li {
     text-justify: inter-word;
 }
 
+.tabsContentDiv {
+    margin-top: 95px;
+}
+
 .memberImage {
     overflow: hidden;
     width: 233px;
