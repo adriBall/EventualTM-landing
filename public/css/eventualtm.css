@@ -1,0 +1,15 @@
+p,li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.memberImage {
+    overflow: hidden;
+    width: 233px;
+    height: 372px
+}
+
+.cardMargins {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

@@ -1,21 +1,77 @@
 <html>
-	<head>
-	<title>EventualTeam</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <title>EventualTeam</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
 
-	
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--Import AOS-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!--Custom js and css-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/eventualtm.css" rel="stylesheet"/>
 
 </head>
 <body>
-	{{{body}}}
+
+<!--Navbar-->
+<div class="navbar-fixed">
+    <nav class="nav-extended blue-grey lighten-2">
+        <div class="nav-wrapper">
+            <a style="padding-left:10px;padding-right:10px" href="#" class="brand-logo"><img width="40" src="res/logo.png">EventualTeam</a>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li id="buttonTab1" class="tab"><a href="#tab1">Qué somos</a></li>
+                <li id="buttonTab2" class="tab"><a href="#tab2">Equipo</a></li>
+                <li id="buttonTab3" class="tab"><a href="#tab3">Metodología</a></li>
+                <li id="buttonTab4" class="tab"><a href="#tab4">Eventual</a></li>
+                <li id="buttonTab5" class="tab"><a href="#tab5">Tecnologías</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--Header image-->
+<div class="parallax-container">
+    <div class="parallax"><img src="res/img1.jpg"></div>
+</div>
+
+<!--Content (see home.html)-->
+<div id="topTabs"></div>
+{{{body}}}
+
+<!--Footer-->
+<footer class="page-footer blue-grey lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2017 Eventual
+        </div>
+    </div>
+</footer>
 </body>
 </html>
