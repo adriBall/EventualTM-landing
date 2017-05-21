@@ -4,7 +4,7 @@ p,li {
 }
 
 .tabsContentDiv {
-    margin-top: 95px;
+    margin-top: 20px;
 }
 
 .memberImage {
@@ -16,4 +16,20 @@ p,li {
 .cardMargins {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out !important;
+}
+
+.headroom--unpinned {
+    top: -120px !important;
+}
+
+.headroom--pinned {
+    top: 0 !important;
 }

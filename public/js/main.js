@@ -21,4 +21,8 @@ document.addEventListener('DOMContentLoaded', function(){
     $("#buttonTab4").click(scrollToTabs);
     $('.parallax').parallax();
     AOS.init();
+
+    var myElement = document.querySelector(".navbar-fixed");
+    var headroom  = new Headroom(myElement);
+    headroom.init();
 });
