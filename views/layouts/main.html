@@ -24,91 +24,131 @@
     <script type="text/javascript" src="js/main.js"></script>
     <link type="text/css" rel="stylesheet" href="css/eventualtm.css" rel="stylesheet"/>
 
+    <!--Web icon-->
+    <link rel="icon" href="res/logo.png">
+
 </head>
 <body>
 
-    <!--Navbar-->
-    <div class="navbar-fixed">
-        <nav class="nav-extended blue-grey lighten-2">
-            <div class="nav-wrapper">
-                <a style="padding-left:10px;padding-right:10px" href="#" class="brand-logo"><img width="40" src="res/logo.png">EventualTeam</a>
+<!--Navbar-->
+<div class="navbar-fixed">
+    <nav class="nav-extended blue-grey lighten-2">
+        <div class="nav-wrapper">
+            <a style="padding-left:10px;padding-right:10px" href="#" class="brand-logo"><img width="40" src="res/logo.png">EventualTeam</a>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li id="buttonTab1" class="tab"><a href="#tab1">Qué somos</a></li>
+                <li id="buttonTab2" class="tab"><a href="#tab2">Equipo</a></li>
+                <li id="buttonTab3" class="tab"><a href="#tab3">Metodología</a></li>
+                <li id="buttonTab4" class="tab"><a href="#tab4">Eventual</a></li>
+                <li id="buttonTab5" class="tab"><a href="#tab5">Financiación</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--Header image-->
+<div class="parallax-container">
+    <div class="parallax"><img src="res/img1.jpg"></div>
+</div>
+
+<!--Content (see home.html)-->
+<div id="topTabs"></div>
+{{{body}}}
+
+<!--   Icon Section   -->
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center blue-grey-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Scrum</h5>
+
+                    <p class="light">
+                        Los principales motivos por los que hemos elegido SCRUM son:
+                    </p>
+                    <p class="light">
+                        - Sprints quincenales, ayudan a llevar un proyecto al día.
+                    </p>
+                    <p class="light">
+                        - Es muy adecuada para proyectos de tamaño medio como este.
+                    </p>
+                    <p class="light">
+                        - Flexibilidad, existe la posibilidad de cambiar de acuerdo a nuevas necesidades sin grandes problemas.
+                    </p>
+                    <p class="light">
+                        - Funciona bien cuando el equipo de desarrollo no está familiarizado con las herramientas que va a utilizar.
+                    </p>
+                </div>
             </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li id="buttonTab1" class="tab"><a href="#tab1">Qué somos</a></li>
-                    <li id="buttonTab2" class="tab"><a href="#tab2">Equipo</a></li>
-                    <li id="buttonTab3" class="tab"><a href="#tab3">Metodología</a></li>
-                    <li id="buttonTab4" class="tab"><a href="#tab4">Eventual</a></li>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center blue-grey-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Equipo</h5>
+
+                    <p class="light">
+                        Eventual está compuesto por un equipo de 5 estudiantes de Ingerniería Informática en la UJI.
+                        Es un equipo multidisciplinar en el que cada uno tiene experiencia y conocimientos en algún campo clave.
+                    </p>
+                    <p class="light">
+                        Gracias a la coordinación de todos los componentes del grupo ha sido posible desarrollar un proyecto profesional y competente.
+                    </p>
+                    <p class="light">
+                        Para más información de cada miembro individualmente, visita el apartado "Equipo".
+                    </p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center blue-grey-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Tecnologías</h5>
+
+                    <p class="light">
+                        - Servicios REST con SpringBoot y Jersey:
+                        La aplicación va estar ejecutándose sobre un servidor web en Tomcat proporcionado por el Framework de SpringBoot. Para la implementación de los servicios se usará el framework Jersey para facilitar la creación de dichos recursos. Todo lo mencionado anteriormente estará desarrollado en Java.
+                    </p>
+                    <p class="light">
+                        - Cliente con Angular2, primeng y bootstrap:
+                        La aplicación web estará diseñada e implementada en Angular2, juntamente con los componentes del framework primeng y los grids de bootstrap para el posicionamiento y la parte responsive de la plataforma.
+                    </p>
+                    <p class="light">
+                        - Typescript:
+                        Para el desarrollo de todos los componentes de la aplicación se usará Typescript. Typescript es Javascript pero compilado, por tanto la web se convertirá en  una aplicación compilada, por consiguiente más rápida.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+
+<!--Footer-->
+<footer class="page-footer blue-grey lighten-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">EVENTUAL</h5>
+                <p class="white-text">Tu organizador de eventos.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" target="_blank" href="https://es.wikipedia.org/wiki/Scrum_(desarrollo_de_software)">Scrum</a></li>
+                    <li><a class="grey-text text-lighten-3" target="_blank" href="https://angular.io/">Angular 2</a></li>
+                    <li><a class="grey-text text-lighten-3" target="_blank" href="https://www.primefaces.org/primeng/">PrimeNg</a></li>
                 </ul>
             </div>
-        </nav>
-    </div>
-
-    <!--Header image-->
-    <div class="parallax-container">
-        <div class="parallax"><img src="res/img1.jpg"></div>
-    </div>
-
-    <!--Content (see home.html)-->
-    <div id="topTabs"></div>
-    {{{body}}}
-
-    <!--   Icon Section   -->
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
-
-                        <p class="light">Escribir algo resumido sobre las ventajas de la metodología.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">Team Experience</h5>
-
-                        <p class="light">Escribir algo resumido sobre las ventajas del equipo.</p>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center blue-grey-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
-
-                        <p class="light">Escribir algo resumido sobre las ventajas de las tecnologías.</p>
-                    </div>
-                </div>
-            </div>
         </div>
-        <br><br>
     </div>
-
-    <!--Footer-->
-    <footer class="page-footer blue-grey lighten-2">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    </ul>
-                </div>
-            </div>
+    <div class="footer-copyright">
+        <div class="container center">
+            © 2017 Eventual. Todos los derechos reservados.
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2017 Eventual
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>

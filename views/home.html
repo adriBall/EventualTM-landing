@@ -3,12 +3,13 @@
     <div id="tab2"></div>
     <div id="tab3"></div>
     <div id="tab4"></div>
+    <div id="tab5"></div>
 </div>
 
 <!--Load tabs content-->
 <script type="text/javascript">
 
-    for (var i = 1; i < 5; i++) {
+    for (var i = 1; i < 6; i++) {
         var oReq = new XMLHttpRequest();
         oReq.open("GET", "/tab" + i, true);
         oReq.onload = loadTab(i, oReq);
