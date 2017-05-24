@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $("#buttonTab2").click(scrollToTabs);
     $("#buttonTab3").click(scrollToTabs);
     $("#buttonTab4").click(scrollToTabs);
+    $("#buttonTab5").click(scrollToTabs);
     $('.parallax').parallax();
     AOS.init();
 
