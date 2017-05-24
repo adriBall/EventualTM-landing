@@ -4,7 +4,8 @@ p,li {
 }
 
 .tabsContentDiv {
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .memberImage {
@@ -44,16 +45,17 @@ p,li {
 
 .name {
     padding: 0 !important;
-    margin-left: 15px !important;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    margin-right: 15px;
+    margin-left: 20px !important;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 .description {
     padding: 0 !important;
-    margin-left: 15px !important;
-    margin-right: 15px;
+    margin-left: 20px !important;
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 .cent {
