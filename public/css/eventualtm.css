@@ -67,3 +67,8 @@ p,li {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+
+.card.horizontal .card-image img {
+    max-width: 233px;
+}
