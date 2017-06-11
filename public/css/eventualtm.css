@@ -68,7 +68,10 @@ p,li {
     padding-right: 0 !important;
 }
 
-
 .card.horizontal .card-image img {
     max-width: 233px;
+}
+
+.margin-video {
+    margin-top: 120px;
 }
